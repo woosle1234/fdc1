@@ -12,6 +12,8 @@ export default class Menu extends Component {
         }
     }
 
+    //open and close nav will set the width for the side menu for the open and close transition
+
     closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "50px";
@@ -63,7 +65,9 @@ export default class Menu extends Component {
                                 </div>
                             </li>
                             <button className="btn align-items-center rounded textColor" style={{ marginTop: "5px" }} onClick={() => { SetDarkMode() ? this.setState({ DarkModeText: 'Light Mode' }) : this.setState({ DarkModeText: 'Dark Mode' }) }}>
-                                {this.state.DarkModeText}
+                                {
+                                this.state.DarkModeText //this text will change depending on light mode or dark mode
+                                }  
                             </button>
                             <br />
                             <button className="btn btn-toggle align-items-center rounded textColor" style={{ marginTop: "5px" }}>

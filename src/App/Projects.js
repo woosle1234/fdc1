@@ -4,6 +4,7 @@ import project from '../Assets/project.png';
 
 export default class Projects extends Component {
 
+    //sets the text color and background color when swithcing between challenges, labs, and projects
     componentDidMount() {
         let texts = document.getElementsByClassName("textColor");
         let bgs = document.getElementsByClassName("bgColor");

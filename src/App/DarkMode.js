@@ -1,5 +1,6 @@
 let Darkmode = false;
 
+
 export function SetDarkMode(){
     let texts = document.getElementsByClassName("textColor");
     let bgs = document.getElementsByClassName("bgColor");
@@ -23,6 +24,7 @@ export function SetDarkMode(){
 
     return Darkmode;
 }
+
 
 export function getDarkMode(){
     return Darkmode;

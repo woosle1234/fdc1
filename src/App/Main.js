@@ -12,6 +12,7 @@ export default class Main extends Component {
         }
     }
 
+    //swithes the components for the challenges, labs, and projects
     changeComp(e) {
         switch (e) {
             case 0:
